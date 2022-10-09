@@ -4,8 +4,9 @@ def validate_user_input():
         try:
             # - ask the user for a number: 'Please enter a number'
             # - try to return the user's input as an integer
-            num = int(input("Please enter a number: "))
-        except ValueError:
+            num = input("Please enter a number ")
+            num = int(num)
+        except (TypeError, ValueError):
             # - continue to ask them for a valid number until they input one
             # - if the user did not input a number, tell them 'You did not enter a valid number, please try again'
             print("You did not enter a valid number, please try again")
