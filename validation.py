@@ -1,18 +1,20 @@
 # 1.1 TODO: Create a function called validate_user_input that will
 def validate_user_input():
-    # - ask the user for a number: 'Please enter a number'
+    # - try to return the user's input as an integer
     while True:
+    # - ask the user for a number: 'Please enter a number'
         try:
-            num = input("Please enter a number ")
-        # - try to return the user's input as an integer
-            num = int(num)
-        except (ValueError):
+            userNum = input("Please enter a number ")
+            userNum = int(userNum)
         # - continue to ask them for a valid number until they input one
-        # - if the user did not input a number, tell them 'You did not enter a valid number, please try again'
+        except (ValueError):
+            # - if the user did not input a number, tell them 'You did not enter a valid number, please try again'
             print("You did not enter a valid number, please try again")
             continue
-        # - once a valid number is received, return that number
-        return num
+        else:
+            break
+    return userNum
+    # - once a valid number is received, return that number
 
 
 # NOTE: What type of error does python throw if you try to turn a non-number string into an integer?
