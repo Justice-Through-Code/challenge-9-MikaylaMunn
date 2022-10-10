@@ -2,12 +2,12 @@
 def validate_user_input():
     # - try to return the user's input as an integer
     while True:
+        userNum = input("Please enter a number: ")
     # - ask the user for a number: 'Please enter a number'
         try:
-            userNum = input("Please enter a number ")
             userNum = int(userNum)
         # - continue to ask them for a valid number until they input one
-        except (ValueError):
+        except ValueError:
             # - if the user did not input a number, tell them 'You did not enter a valid number, please try again'
             print("You did not enter a valid number, please try again")
             continue
