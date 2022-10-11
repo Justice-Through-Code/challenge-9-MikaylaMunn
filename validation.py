@@ -20,8 +20,8 @@ def validate_user_input():
 # Test it out (or google it!) to see which one. Specifically catch that exception in your code.
 
 # 1.2 TODO: Once you are done, uncomment the two lines below to ensure that your code works as expected
-user_number = validate_user_input()
-print(f"The number the user entered is {user_number}.")
+# user_number = validate_user_input()
+# print(f"The number the user entered is {user_number}.")
 # 2.1 TODO: Create a function called print_tenth_item that will
 def print_tenth_item(top_ten):
     # - take in a list of items as a parameter called `top_ten`
